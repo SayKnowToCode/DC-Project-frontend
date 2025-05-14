@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import ProductList from './pages/ProductList';
-import ProductDetails from './components/ProductDetails';
-import Login from './auth/Login';
+import ProductList from './pages/ProductList/ProductList.jsx';
+import ProductDetails from './components/ProductDetails/ProductDetails.jsx';
+import Login from './auth/Login/Login.jsx';
 
 export default function App() {
   return (
