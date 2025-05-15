@@ -134,7 +134,7 @@ function ProductDetails() {
     }
 
     // Implement place order functionality
-    axios.post(`${cartURL}/placeOrder`, { username })
+    axios.get(`http://dc-project.com/send/send/${username}`, { username })
       .then(res => {
         alert("Order placed successfully!");
         setCart([]);
