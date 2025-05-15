@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Login.css';
 
@@ -44,6 +45,7 @@ function Login() {
           onChange={e => setPassword(e.target.value)}
         />
         <button className="login-button" onClick={handleLogin}>Login</button>
+        <Link to={'/register'}>Not registered yet ?</Link>
       </div>
     </div>
   );
