@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import ProductList from './pages/ProductList/ProductList.jsx';
 import ProductDetails from './components/ProductDetails/ProductDetails.jsx';
 import Login from './auth/Login/Login.jsx';
 
@@ -9,8 +8,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ProductList />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/" element={<ProductDetails />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
